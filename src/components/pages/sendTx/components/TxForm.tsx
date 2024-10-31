@@ -49,6 +49,7 @@ export function TxForm({ address, onSuccess, currentBalance, client }: Props) {
 
       try {
         const txResponse = await tonConnectUi.sendTransaction(tx);
+        form.reset();
         const executedTx = await waitForTransaction(
           {
             address,
@@ -56,7 +57,6 @@ export function TxForm({ address, onSuccess, currentBalance, client }: Props) {
           },
           client
         );
-        form.reset();
         onSuccess(executedTx);
       } catch (error) {
         setRootError(getErrorMsg(error));

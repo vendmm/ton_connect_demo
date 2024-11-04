@@ -1,5 +1,5 @@
-import { Layout } from "@/components/layout";
-import { QueryClient, TonConnectProvider } from "@/components/providers";
+import { QueryClient, TonConnectProvider } from "@/app/_providers";
+import { Layout } from "@/pagesLayout/layout";
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { ReactNode } from "react";

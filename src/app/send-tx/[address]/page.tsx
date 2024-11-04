@@ -1,8 +1,6 @@
-import { SendTxPage } from "@/components/pages/sendTx";
-import { MakePageProps } from "@/shared/routes/routes";
+import { MakePageProps } from "@/features/routes";
+import { SendTxPage } from "@/pagesLayout/sendTx";
 import { notFound } from "next/navigation";
-
-export const revalidate = 0;
 
 type PageProps = MakePageProps<"address">;
 

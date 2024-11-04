@@ -1,4 +1,4 @@
-import { isUnknownObject } from "./typeGuards";
+import { isUnknownObject } from "./isUnknownObject";
 
 /**
  * @summary

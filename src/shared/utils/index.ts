@@ -1,2 +1,2 @@
 export * from "./getErrorMsg";
-export * from "./typeGuards";
+export * from "./isUnknownObject";
